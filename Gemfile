@@ -11,7 +11,7 @@ gem 'grape-pagination'
 gem 'grape-entity'
 gem 'will_paginate', '~> 3.0'
 
-gem 'rdio_api', :git => 'git@github.com:anilv/rdio_api.git'
+gem 'rdio_api', :github => 'anilv/rdio_api'
 gem 'oauth'
 
 group :development,:test do

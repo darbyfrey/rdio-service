@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:anilv/rdio_api.git
+  remote: git://github.com/anilv/rdio_api.git
   revision: 2a7258abecb86f8af6c2c3d887a66cb9701d6916
   specs:
     rdio_api (0.1.1)
