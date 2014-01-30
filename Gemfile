@@ -1,15 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rack-cors'
-gem 'mysql2'
-gem 'activerecord', '3.2.13', :require => 'active_record'
 gem 'honeybadger'
 gem 'json'
 gem 'shotgun'
 gem 'napa'
 gem 'grape-pagination'
 gem 'grape-entity'
-gem 'will_paginate', '~> 3.0'
+gem 'activesupport'
 
 gem 'rdio_api', :github => 'anilv/rdio_api'
 gem 'oauth'

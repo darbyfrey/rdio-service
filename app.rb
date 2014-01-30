@@ -3,8 +3,8 @@ require 'bundler/setup'
 Bundler.setup(:default)
 require 'napa'
 Bundler.require(:default, Napa.env.to_sym)
-require 'will_paginate'
-require 'will_paginate/active_record'
+require 'active_support'
+require 'active_support/dependencies'
 
 # load environment
 Dotenv.load(Napa.env.test? ? '.env.test' : '.env')
