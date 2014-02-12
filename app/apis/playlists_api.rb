@@ -1,7 +1,7 @@
 class PlaylistsApi < Grape::API
   helpers do
     def find_playlist(id)
-      RDIO.getPlaylists(extras: 'trackKeys')['owned'].select { |x| x['key'] == id }.first
+      RDIO.getPlaylists(extras: 'trackKeys').values.flatten.select { |x| x['key'] == id }.first
     end
   end
 
