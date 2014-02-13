@@ -1,7 +1,8 @@
 class SongEntity < Grape::Entity
   root :data, :data
 
-  expose  :radioKey,
+  expose  :id,
+          :radioKey,
           :baseIcon,
           :artistUrl,
           :duration,
@@ -20,4 +21,8 @@ class SongEntity < Grape::Entity
           :icon400,
           :artist,
           :albumKey
+
+  def id
+    self.object['key']
+  end
 end
