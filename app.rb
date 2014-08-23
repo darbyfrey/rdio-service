@@ -2,6 +2,8 @@
 require 'bundler/setup'
 Bundler.setup(:default)
 require 'napa/setup'
+Napa.skip_initialization = true
+
 Bundler.require(:default, Napa.env.to_sym)
 require 'napa'
 
