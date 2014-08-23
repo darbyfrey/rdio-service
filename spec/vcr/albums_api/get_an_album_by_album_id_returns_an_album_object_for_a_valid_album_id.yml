@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.rdio.com/1/
+    body:
+      encoding: US-ASCII
+      string: method=get&keys=a329934
+    headers:
+      user-agent:
+      - Faraday v0.8.9
+      content-type:
+      - application/x-www-form-urlencoded
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-mashery-responder:
+      - prod-p-worker-lax-04.mashery.com
+      server:
+      - nginx/1.2.4
+      date:
+      - Sat, 23 Aug 2014 03:54:51 GMT
+      content-type:
+      - application/json
+      connection:
+      - close
+      x-srv:
+      - srv-210-27
+      content-language:
+      - en
+      vary:
+      - Accept-Language, Cookie
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      p3p:
+      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy
+        for more info."
+      x-version:
+      - '720'
+      accept-ranges:
+      - bytes
+      content-length:
+      - '895'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "result": {"a329934": {"baseIcon": "album/e/c/8/00000000000508ce/13/square-200.jpg",
+        "releaseDate": "2010-05-04", "displayDate": "May  4, 2010", "duration": 3777,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HV40/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HV40/", "type": "a", "price": "None", "key":
+        "a329934", "icon": "http://rdio3img-a.akamaihd.net/album/e/c/8/00000000000508ce/13/square-200.jpg",
+        "canSample": true, "name": "Forgiveness Rock Record", "isExplicit": false,
+        "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Forgiveness_Rock_Record/",
+        "artistKey": "r79991", "length": 14, "trackKeys": ["t4075432", "t4075442",
+        "t4075448", "t4075454", "t4075461", "t4075469", "t4075475", "t4075481", "t4075488",
+        "t4075494", "t4075504", "t4075513", "t4075519", "t4075526"], "canTether":
+        true, "artistUrl": "/artist/Broken_Social_Scene/"}}}'
+    http_version: '1.1'
+  recorded_at: Sat, 23 Aug 2014 03:54:50 GMT
+recorded_with: VCR 2.9.2

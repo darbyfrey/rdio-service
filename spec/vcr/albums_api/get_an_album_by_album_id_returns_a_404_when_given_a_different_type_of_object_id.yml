@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.rdio.com/1/
+    body:
+      encoding: US-ASCII
+      string: method=get&keys=t4075432
+    headers:
+      user-agent:
+      - Faraday v0.8.9
+      content-type:
+      - application/x-www-form-urlencoded
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-mashery-responder:
+      - prod-p-worker-lax-02.mashery.com
+      server:
+      - nginx/1.2.4
+      date:
+      - Sat, 23 Aug 2014 03:54:51 GMT
+      content-type:
+      - application/json
+      connection:
+      - close
+      x-srv:
+      - srv-111-07
+      content-language:
+      - en
+      vary:
+      - Accept-Language, Cookie
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      p3p:
+      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy
+        for more info."
+      x-version:
+      - '720'
+      accept-ranges:
+      - bytes
+      content-length:
+      - '1288'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "result": {"t4075432": {"key": "t4075432", "baseIcon":
+        "album/e/c/8/00000000000508ce/13/square-200.jpg", "canDownloadAlbumOnly":
+        false, "radio": {"type": "sr", "key": "sr4075432"}, "artistUrl": "/artist/Broken_Social_Scene/",
+        "duration": 407, "album": "Forgiveness Rock Record", "isClean": false, "albumUrl":
+        "/artist/Broken_Social_Scene/album/Forgiveness_Rock_Record/", "shortUrl":
+        "http://rd.io/x/Qit8cOs/", "albumArtist": "Broken Social Scene", "canStream":
+        true, "embedUrl": "https://rd.io/e/Qit8cOs/", "type": "t", "gridIcon": "http://rdiodynimages3-a.akamaihd.net/?l=a329934-13%3Bboxblur%2810%25%2C10%25%29%3Bprimary%280.65%29%3Boverlay%28overlays/shadow%29%3Ba329934-13%3Bpad%2850%25%29%3B%243%3Aoverlay%28%245%29",
+        "price": "None", "trackNum": 1, "albumArtistKey": "r79991", "radioKey": "sr4075432",
+        "icon": "http://rdio3img-a.akamaihd.net/album/e/c/8/00000000000508ce/13/square-200.jpg",
+        "canSample": true, "name": "World Sick", "isExplicit": false, "artist": "Broken
+        Social Scene", "url": "/artist/Broken_Social_Scene/album/Forgiveness_Rock_Record/track/World_Sick/",
+        "icon400": "http://rdio1img-a.akamaihd.net/album/e/c/8/00000000000508ce/13/square-400.jpg",
+        "artistKey": "r79991", "canDownload": false, "length": 1, "canTether": true,
+        "albumKey": "a329934"}}}'
+    http_version: '1.1'
+  recorded_at: Sat, 23 Aug 2014 03:54:51 GMT
+recorded_with: VCR 2.9.2

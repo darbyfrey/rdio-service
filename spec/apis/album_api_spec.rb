@@ -22,4 +22,23 @@ describe AlbumsApi do
       expect(parsed_response.data.count).to be(0)
     end
   end
+
+  describe 'GET an album by album_id', :vcr do
+    it 'returns an album object for a valid album_id' do
+      get '/albums/a329934'
+      expect(parsed_response.data.type).to eq('album')
+      expect(parsed_response.data.name).to eq('Forgiveness Rock Record')
+      expect(parsed_response.data.artist).to eq('Broken Social Scene')
+    end
+
+    it 'returns a 404 when the album_id is not found' do
+      get '/albums/a99999999'
+      expect(last_response.status).to eq(404)
+    end
+
+    it 'returns a 404 when given a different type of object_id' do
+      get '/albums/t4075432'
+      expect(last_response.status).to eq(404)
+    end
+  end
 end

@@ -13,9 +13,11 @@ class PlaylistsApi < Grape::API
       represent playlists, with: PlaylistRepresenter
     end
 
-    desc 'Returns a playlist for a given id'
+    desc 'Get a playlist for the given playlist_id'
     get ':playlist_id' do
       playlist = find_playlist(params[:playlist_id])
+
+      return status 404 unless playlist.present?
 
       song_ids = playlist['trackKeys'].join(',')
       songs = RDIO.get(keys: song_ids).values

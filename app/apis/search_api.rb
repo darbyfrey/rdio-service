@@ -1,6 +1,6 @@
 class SearchApi < Grape::API
   resource :search do
-    desc 'Search the RDIO library'
+    desc 'Get a collection of artists, albums, and tracks for the given q'
     params do
       requires :q, type: String, desc: 'The query string for the search'
     end

@@ -1,6 +1,6 @@
 class PlaybackTokensApi < Grape::API
   resource :playback_tokens do
-    desc 'Creates a Playback Token'
+    desc 'Get a playback token'
     params do
       optional :domain, type: String, desc: 'The domain name of the app requesting the playback token'
     end
