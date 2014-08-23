@@ -8,7 +8,7 @@ use Rack::Cors do
 end
 #
 # use Honeybadger::Rack
-# use Napa::Middleware::Logger
+use Napa::Middleware::Logger
 
 use Napa::Middleware::AppMonitor
 # use Napa::Middleware::Authentication
