@@ -40,10 +40,6 @@ GET        /tracks/:track_id                        # Get a track for the given 
 ```
 ### Extra Links
 
-What a perfectly constructed service! We're so honored :bow:
-
-If your service makes heavy use of other gems or API's, imbue us with that knowledge in the form of
-
 - [Rdio Web Service API](http://www.rdio.com/developers/docs/web-service/index/)
 - [Rdio Web Playback API](http://www.rdio.com/developers/docs/web-playback/index/)
 - [Rdio Web Playback jQuery Library](http://www.rdio.com/developers/docs/libraries/jquery/)
