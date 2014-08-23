@@ -6,20 +6,12 @@ cache:
 rvm:
   - ruby-2.0.0
 
-before_script:
-  - mysql -e 'create database rdio_service_test;'
-  - "bundle exec rake db:migrate"
-
 script: "bundle exec rspec --colour"
 
 env:
   global:
     - RACK_ENV=test
     - SERVICE_NAME=rdio-service
-    - DATABASE_USER=root
-    - DATABASE_PASSWORD=''
-    - DATABASE_HOST=localhost
-    - DATABASE_NAME=rdio_service_test
     - RDIO_KEY=YOUR_RDIO_KEY
     - RDIO_SECRET=YOUR_RDIO_SECRET
     - RDIO_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
