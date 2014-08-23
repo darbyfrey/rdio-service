@@ -1,6 +1,6 @@
 # rdio-service
 
-:bow: Please put your auspicious [Travis status button](http://docs.travis-ci.com/user/status-images/) here :bow:
+[![Build Status](https://travis-ci.org/darbyfrey/rdio-service.svg?branch=master)](https://travis-ci.org/darbyfrey/rdio-service)
 
 1. [Overview](#overview)
 2. [How Does It Work](#how-does-it-work)
