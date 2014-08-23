@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.rdio.com/1/
+    body:
+      encoding: US-ASCII
+      string: method=getPlaybackToken&domain=foo.com
+    headers:
+      user-agent:
+      - Faraday v0.8.9
+      content-type:
+      - application/x-www-form-urlencoded
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-mashery-responder:
+      - prod-p-worker-lax-03.mashery.com
+      server:
+      - nginx/1.2.4
+      date:
+      - Sat, 23 Aug 2014 00:34:45 GMT
+      content-type:
+      - application/json
+      connection:
+      - close
+      x-srv:
+      - srv-111-07
+      content-language:
+      - en
+      vary:
+      - Accept-Language, Cookie
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      p3p:
+      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy
+        for more info."
+      x-version:
+      - '720'
+      accept-ranges:
+      - bytes
+      content-length:
+      - '106'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "result": "FAKE_PLAYBACK_TOKEN"}'
+    http_version: '1.1'
+  recorded_at: Sat, 23 Aug 2014 00:34:44 GMT
+recorded_with: VCR 2.9.2

@@ -5,13 +5,14 @@ class PlaybackTokensApi < Grape::API
       optional :domain, type: String, desc: 'The domain name of the app requesting the playback token'
     end
     post do
-      if ENV['AIRPLANE_MODE'] == 'enabled'
-        JSON.parse(File.read('spec/fixtures/playback_token.json'))
-      else
-        domain = params[:domain] || 'localhost'
+      domain = params[:domain] || 'localhost'
 
-        { token: RDIO.getPlaybackToken(domain: domain) }
-      end
+      token = OpenStruct.new(
+        playback_token: RDIO.getPlaybackToken(domain: domain),
+        domain: domain
+      )
+
+      represent token, with: PlaybackTokenRepresenter
     end
   end
 end

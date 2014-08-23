@@ -1,5 +1,14 @@
-require 'bundler'
-require './app'
-require 'irb'
-require 'irb/completion'
-IRB.start
+#!/usr/bin/env ruby
+
+begin
+  require 'pry'
+  Interpreter = Pry
+rescue LoadError
+  require 'irb'
+  require 'irb/completion'
+  Interpreter = IRB
+end
+
+require 'racksh/init'
+Rack::Shell.init
+Interpreter.start

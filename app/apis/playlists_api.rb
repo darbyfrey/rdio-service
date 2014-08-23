@@ -10,23 +10,19 @@ class PlaylistsApi < Grape::API
     get do
       playlists = RDIO.getPlaylists(extras: 'trackKeys')['owned']
 
-      present playlists, with: PlaylistEntity
+      represent playlists, with: PlaylistRepresenter
     end
 
     desc 'Returns a playlist for a given id'
     get ':playlist_id' do
-      if ENV['AIRPLANE_MODE'] == 'enabled'
-        JSON.parse(File.read('spec/fixtures/playlist.json'))
-      else
-        playlist = find_playlist(params[:playlist_id])
+      playlist = find_playlist(params[:playlist_id])
 
-        song_ids = playlist['trackKeys'].join(',')
-        songs = RDIO.get(keys: song_ids).values
+      song_ids = playlist['trackKeys'].join(',')
+      songs = RDIO.get(keys: song_ids).values
 
-        playlist.merge!(id: playlist['key'], songs: songs)
+      playlist.merge!(id: playlist['key'], songs: songs)
 
-        present playlist, with: PlaylistEntity, type: :full
-      end
+      represent OpenStruct.new(playlist), with: PlaylistRepresenter, include_songs: true
     end
   end
 end
