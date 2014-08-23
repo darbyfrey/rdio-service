@@ -1,0 +1,165 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.rdio.com/1/
+    body:
+      encoding: US-ASCII
+      string: method=getAlbumsForArtist&artist=r79991&count=100
+    headers:
+      user-agent:
+      - Faraday v0.8.9
+      content-type:
+      - application/x-www-form-urlencoded
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-mashery-responder:
+      - prod-p-worker-lax-03.mashery.com
+      server:
+      - nginx/1.2.4
+      date:
+      - Sat, 23 Aug 2014 03:03:39 GMT
+      content-type:
+      - application/json
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - Accept-Language, Cookie
+      x-srv:
+      - srv-207-09
+      content-language:
+      - en
+      cache-control:
+      - no-cache
+      access-control-allow-origin:
+      - '*'
+      p3p:
+      - CP="This is not a P3P policy. See http://www.rdio.com/legal/privacy-policy
+        for more info."
+      x-version:
+      - '720'
+      x-original-transfer-encoding:
+      - chunked
+      x-original-content-encoding:
+      - gzip
+      x-original-content-length:
+      - '1679'
+      accept-ranges:
+      - bytes
+      content-length:
+      - '8682'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "result": [{"baseIcon": "album/e/c/8/00000000000508ce/13/square-200.jpg",
+        "releaseDate": "2010-05-04", "displayDate": "May  4, 2010", "duration": 3777,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HV40/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HV40/", "type": "a", "price": "None", "key":
+        "a329934", "icon": "http://rdio3img-a.akamaihd.net/album/e/c/8/00000000000508ce/13/square-200.jpg",
+        "canSample": true, "name": "Forgiveness Rock Record", "isExplicit": false,
+        "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Forgiveness_Rock_Record/",
+        "artistKey": "r79991", "length": 14, "trackKeys": ["t4075432", "t4075442",
+        "t4075448", "t4075454", "t4075461", "t4075469", "t4075475", "t4075481", "t4075488",
+        "t4075494", "t4075504", "t4075513", "t4075519", "t4075526"], "canTether":
+        true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/1/f/4/00000000000504f1/3/square-200.jpg",
+        "releaseDate": "2006-10-27", "displayDate": "Oct 27, 2006", "duration": 3367,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HW7I/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HW7I/", "type": "a", "price": "None", "key":
+        "a328945", "icon": "http://rdio3img-a.akamaihd.net/album/1/f/4/00000000000504f1/3/square-200.jpg",
+        "canSample": true, "name": "You Forgot It in People", "isExplicit": false,
+        "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/You_Forgot_It_in_People/",
+        "artistKey": "r79991", "length": 13, "trackKeys": ["t4063698", "t4063717",
+        "t4063749", "t4063791", "t4063824", "t4063863", "t4063903", "t4063942", "t4063984",
+        "t4064014", "t4064049", "t4064097", "t4064135"], "canTether": true, "artistUrl":
+        "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/3/5/6/0000000000050653/1/square-200.jpg",
+        "releaseDate": "2005-10-04", "displayDate": "Oct  4, 2005", "duration": 3788,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HWRA/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HWRA/", "type": "a", "price": "None", "key":
+        "a329299", "icon": "http://rdio1img-a.akamaihd.net/album/3/5/6/0000000000050653/1/square-200.jpg",
+        "canSample": true, "name": "Broken Social Scene", "isExplicit": false, "artist":
+        "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Broken_Social_Scene/",
+        "artistKey": "r79991", "length": 14, "trackKeys": ["t4067823", "t4067856",
+        "t4067890", "t4067924", "t4067939", "t4067971", "t4068006", "t4068043", "t4068064",
+        "t4068096", "t4068136", "t4068176", "t4068221", "t4068232"], "canTether":
+        true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/5/d/9/00000000000509d5/square-200.jpg",
+        "releaseDate": "2005-10-04", "displayDate": "Oct  4, 2005", "duration": 5384,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HVpY/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HVpY/", "type": "a", "price": "None", "key":
+        "a330197", "icon": "http://rdio1img-a.akamaihd.net/album/5/d/9/00000000000509d5/square-200.jpg",
+        "canSample": true, "name": "Broken Social Scene", "isExplicit": false, "artist":
+        "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Broken_Social_Scene_1/",
+        "artistKey": "r79991", "length": 21, "trackKeys": ["t4078001", "t4078024",
+        "t4078050", "t4078082", "t4078093", "t4078116", "t4078143", "t4078171", "t4078194",
+        "t4078225", "t4078260", "t4078300", "t4078355", "t4078364", "t4078433", "t4078454",
+        "t4078499", "t4078519", "t4078550", "t4078569", "t4078590"], "canTether":
+        true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/b/0/b/000000000006db0b/1/square-200.jpg",
+        "releaseDate": "2003-03-03", "displayDate": "Mar  3, 2003", "duration": 3578,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5EhEg/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5EhEg/", "type": "a", "price": "None", "key":
+        "a449291", "icon": "http://img02.cdn2-rdio.com/album/b/0/b/000000000006db0b/1/square-200.jpg",
+        "canSample": true, "name": "Feel Good Lost", "isExplicit": false, "artist":
+        "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Feel_Good_Lost_1/",
+        "artistKey": "r79991", "length": 12, "trackKeys": ["t5520606", "t5520637",
+        "t5520652", "t5520675", "t5520703", "t5520724", "t5520736", "t5520771", "t5520787",
+        "t5520812", "t5520822", "t5520863"], "canTether": true, "artistUrl": "/artist/Broken_Social_Scene/"},
+        {"baseIcon": "album/4/e/2/00000000000502e4/square-200.jpg", "releaseDate":
+        "2004-03-23", "displayDate": "Mar 23, 2004", "duration": 2931, "isClean":
+        false, "shortUrl": "http://rd.io/x/Qj5HXac/", "canStream": true, "embedUrl":
+        "https://rd.io/e/Qj5HXac/", "type": "a", "price": "None", "key": "a328420",
+        "icon": "http://rdio1img-a.akamaihd.net/album/4/e/2/00000000000502e4/square-200.jpg",
+        "canSample": true, "name": "Bee Hives", "isExplicit": false, "artist": "Broken
+        Social Scene", "url": "/artist/Broken_Social_Scene/album/Bee_Hives/", "artistKey":
+        "r79991", "length": 9, "trackKeys": ["t4057182", "t4057188", "t4057201", "t4057223",
+        "t4057234", "t4057262", "t4057283", "t4057302", "t4057318"], "canTether":
+        true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/3/b/2/00000000000502b3/1/square-200.jpg",
+        "releaseDate": "2007-05-29", "displayDate": "May 29, 2007", "duration": 1283,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HXfA/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HXfA/", "type": "a", "price": "None", "key":
+        "a328371", "icon": "http://rdio1img-a.akamaihd.net/album/3/b/2/00000000000502b3/1/square-200.jpg",
+        "canSample": true, "name": "Live at Radio Aligre FM in Paris", "isExplicit":
+        false, "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Live_at_Radio_Aligre_FM_in_Paris/",
+        "artistKey": "r79991", "length": 6, "trackKeys": ["t4056529", "t4056545",
+        "t4056552", "t4056562", "t4056581", "t4056590"], "canTether": true, "artistUrl":
+        "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/1/5/5/0000000000050551/3/square-200.jpg",
+        "releaseDate": "2010-03-23", "displayDate": "Mar 23, 2010", "duration": 407,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5HWhI/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5HWhI/", "type": "a", "price": "None", "key":
+        "a329041", "icon": "http://rdio1img-a.akamaihd.net/album/1/5/5/0000000000050551/3/square-200.jpg",
+        "canSample": true, "name": "World Sick", "isExplicit": false, "artist": "Broken
+        Social Scene", "url": "/artist/Broken_Social_Scene/album/World_Sick/", "artistKey":
+        "r79991", "length": 1, "trackKeys": ["t4064779"], "canTether": true, "artistUrl":
+        "/artist/Broken_Social_Scene/"}, {"baseIcon": "album/e/0/1/000000000016510e/2/square-200.jpg",
+        "releaseDate": "2010-04-26", "displayDate": "Apr 26, 2010", "duration": 503,
+        "isClean": false, "shortUrl": "http://rd.io/x/Qj5UDk0/", "canStream": true,
+        "embedUrl": "https://rd.io/e/Qj5UDk0/", "type": "a", "price": "None", "key":
+        "a1462542", "icon": "http://rdio3img-a.akamaihd.net/album/e/0/1/000000000016510e/2/square-200.jpg",
+        "canSample": true, "name": "Forced To Love", "isExplicit": false, "artist":
+        "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Forced_To_Love/",
+        "artistKey": "r79991", "length": 2, "trackKeys": ["t16397211", "t16397223"],
+        "canTether": true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon":
+        "album/f/2/5/000000000005052f/1/square-200.jpg", "releaseDate": "2010-03-23",
+        "displayDate": "Mar 23, 2010", "duration": 503, "isClean": false, "shortUrl":
+        "http://rd.io/x/Qj5HWmw/", "canStream": true, "embedUrl": "https://rd.io/e/Qj5HWmw/",
+        "type": "a", "price": "None", "key": "a329007", "icon": "http://rdio1img-a.akamaihd.net/album/f/2/5/000000000005052f/1/square-200.jpg",
+        "canSample": true, "name": "Forced to Love / All to All", "isExplicit": false,
+        "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Forced_to_Love_/_All_to_All/",
+        "artistKey": "r79991", "length": 2, "trackKeys": ["t4064384", "t4064415"],
+        "canTether": true, "artistUrl": "/artist/Broken_Social_Scene/"}, {"baseIcon":
+        "album/6/0/1/000000000006f106/square-200.jpg", "releaseDate": "2007-04-03",
+        "displayDate": "Apr  3, 2007", "duration": 961, "isClean": false, "shortUrl":
+        "http://rd.io/x/Qj5ErkU/", "canStream": true, "embedUrl": "https://rd.io/e/Qj5ErkU/",
+        "type": "a", "price": "None", "key": "a454918", "icon": "http://img00.cdn2-rdio.com/album/6/0/1/000000000006f106/square-200.jpg",
+        "canSample": true, "name": "Live at Lollapalooza 2006: Broken Social Scene",
+        "isExplicit": false, "artist": "Broken Social Scene", "url": "/artist/Broken_Social_Scene/album/Live_at_Lollapalooza_2006_Broken_Social_Scene/",
+        "artistKey": "r79991", "length": 3, "trackKeys": ["t5584011", "t5584020",
+        "t5584025"], "canTether": true, "artistUrl": "/artist/Broken_Social_Scene/"}]}'
+    http_version: '1.1'
+  recorded_at: Sat, 23 Aug 2014 03:03:39 GMT
+recorded_with: VCR 2.9.2

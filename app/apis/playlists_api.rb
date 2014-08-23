@@ -22,7 +22,7 @@ class PlaylistsApi < Grape::API
 
       playlist.merge!(id: playlist['key'], songs: songs)
 
-      represent OpenStruct.new(playlist), with: PlaylistRepresenter, include_songs: true
+      represent OpenStruct.new(playlist), with: PlaylistRepresenter, include_tracks: true
     end
   end
 end

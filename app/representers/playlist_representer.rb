@@ -1,18 +1,17 @@
-class PlaylistRepresenter < Napa::Representer
+class PlaylistRepresenter < RdioRepresenter
   property :object_type, getter: 'playlist'
-  property :id, getter: Proc.new { self['key'] }, type: String
-  property :ownerKey
+  property :id, exec_context: :decorator
   property :name
   property :url
-  property :ownerIcon
+  property :owner_icon
   property :owner
-  property :shortUrl
+  property :short_url
   property :length
-  property :baseIcon
-  property :ownerUrl
-  property :embedUrl
+  property :base_icon
+  property :owner_url
+  property :embed_url
   property :type
   property :icon
 
-  collection :songs, extend: SongRepresenter, if: -> (opts) { opts[:include_songs] }
+  collection :songs, extend: TrackRepresenter, if: -> (opts) { opts[:include_tracks] }
 end
