@@ -5,6 +5,7 @@
 1. [Overview](#overview)
 2. [How Does It Work](#how-does-it-work)
 3. [Endpoints](#endpoints)
+4. [Playback Tokens](#playback-tokens)
 5. [Extra Links](#extra-links)
 
 ### Overview
@@ -15,7 +16,7 @@ The `rdio-service` provides a simple interface into the Rdio API.
 
 The service exposes a few endpoints for finding music:
 
-* `/search?q=[Artist, Song, or Track]`
+* `/search?q=[Artist, Song, or Track]` (accepts option params of `type` or `types[]` which will accept a single type or an array of the following values [Artist, Song, or Track])
 * `/albums?artist_id=[Artist ID]`
 * `/albums/:album_id`
 * `/tracks?artist_id=[Artist ID]`
@@ -38,6 +39,21 @@ GET        /search?q=...                            # Get a collection of artist
 GET        /tracks?artist_id=...                    # Get a collection of tracks for a given artist_id
 GET        /tracks/:track_id                        # Get a track for the given track_id
 ```
+
+### Playback Tokens
+
+In order to be able to stream music from Rdio, you will need a playback token. A playback token can be obtained by sending a POST request to:
+
+```
+POST  /playback_tokens
+```
+
+It also accepts an optional `domain` parameter. `domain` defaults to `localhost` unless otherwise specificed. The `domain` will need to match the host of the site your app will play from.
+
+Once you have a playback token, you can pass it to the Rdio jQuery library as described here:
+
+[http://www.rdio.com/developers/docs/libraries/jquery/]()
+
 ### Extra Links
 
 - [Rdio Web Service API](http://www.rdio.com/developers/docs/web-service/index/)

@@ -4,3 +4,5 @@ RDIO = RdioApi.new(
   access_token: ENV['RDIO_ACCESS_TOKEN'],
   access_secret: ENV['RDIO_ACCESS_SECRET']
 )
+
+RDIO_TYPES = ["Album", "Artist", "Track"]
