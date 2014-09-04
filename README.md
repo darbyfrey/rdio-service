@@ -14,6 +14,12 @@ The `rdio-service` provides a simple interface into the Rdio API.
 
 ### How Does It Work
 
+The service is hosted on Heroku at:
+
+```
+http://rdio-service.herokuapp.com/
+```
+
 The service exposes a few endpoints for finding music:
 
 * `/search?q=[Artist, Song, or Track]` (accepts option params of `type` or `types[]` which will accept a single type or an array of the following values [Artist, Song, or Track])
