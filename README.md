@@ -22,7 +22,7 @@ http://rdio-service.herokuapp.com/
 
 The service exposes a few endpoints for finding music:
 
-* `/search?q=[Artist, Song, or Track]` (accepts option params of `type` or `types[]` which will accept a single type or an array of the following values [Artist, Song, or Track])
+* `/search?q=[Artist, Album, or Track]` (accepts option params of `type` or `types[]` which will accept a single type or an array of the following values [Artist, Album, or Track])
 * `/albums?artist_id=[Artist ID]`
 * `/albums/:album_id`
 * `/tracks?artist_id=[Artist ID]`
