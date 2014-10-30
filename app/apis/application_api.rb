@@ -13,6 +13,13 @@ class ApplicationApi < Grape::API
     end
   end
 
+  desc 'Root API path with a link to documentation'
+  get do
+    {
+      documentation: 'https://github.com/bellycard/rdio-service'
+    }
+  end
+
   mount AlbumsApi
   mount PlaylistsApi
   mount PlaybackTokensApi
