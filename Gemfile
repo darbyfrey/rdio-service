@@ -4,12 +4,12 @@ gem 'rack-cors'
 gem 'honeybadger'
 gem 'json'
 gem 'shotgun'
-gem 'napa', github: 'bellycard/napa'
+gem 'napa', github: 'darbyfrey/napa'
 gem 'grape-pagination'
 gem 'grape-entity'
 gem 'activesupport'
 
-gem 'rdio_api', :github => 'anilv/rdio_api'
+gem 'rdio_api', :github => 'darbyfrey/rdio_api'
 gem 'oauth'
 
 group :development,:test do
